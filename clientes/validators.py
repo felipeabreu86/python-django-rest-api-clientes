@@ -1,3 +1,6 @@
+import re
+
+
 def cpf_valido(numero_cpf):
     return len(numero_cpf) == 11
 
@@ -11,4 +14,5 @@ def rg_valido(rg):
 
 
 def celular_valido(celular):
-    return 11 <= len(celular) <= 14
+    modelo = '[0-9]{2} [0-9]{5}-[0-9]{4}'
+    return re.findall(modelo, celular)
