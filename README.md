@@ -1,35 +1,36 @@
 # Django Rest Api - Clientes
 
-API para o cadastro de clientes desenvolvida por meio do Django Rest Framework
+API para o cadastro de clientes desenvolvida por meio do Django Rest Framework.
 
-## Como desenvolver (Windows)?
+## Como Desenvolver (Windows):
 
 1. Clone o repositório
-2. Crie um virtualenv com Python 3.7.4
-3. Ative o virtualenv
-4. Instale as dependências
-5. Configure a instância com o .env
-6. Execute os testes
+2. Acesse o diretório do projeto
+3. Crie um virtualenv com **Python 3.7.4**
+4. Ative o virtualenv
+5. Instale as dependências
+6. Configure a instância com o **.env**
+7. Execute os testes
 
 ```console
-git clone git@github.com:felipeabreu86/python-django-rest-api-clientes.git
-cd python-django-rest-api-clientes
-python -m venv .venv
-source .venv/scripts/activate
-pip install -r requirements.txt
-cp dev-contrib/env-sample .env
-python manage.py test
+1. git clone git@github.com:felipeabreu86/python-django-rest-api-clientes.git
+2. cd python-django-rest-api-clientes
+3. python -m venv .venv
+4. ./.venv/scripts/activate
+5. pip install -r requirements.txt
+6. cp dev-contrib/env-sample .env
+7. python manage.py test
 ```
 
-## Como fazer o Deploy (Windows)?
+## Como Realizar o Deploy (Windows):
 
-1. Crie uma conta no Fly.io
-2. Configure as variáveis de ambiente não-sensíveis em fly.toml
+1. Tenha/Crie uma conta no **Fly.io**
+2. Configure as variáveis de ambiente não-sensíveis em **fly.toml** dentro de **[env]**
 3. Instale o Fly CLI (flyctl)
 4. Autentique-se via flyctl
 5. Realize o Deploy
-6. Configure uma variável de ambiente sensível chamada SECRET_KEY
-7. Configure um super usuário
+6. Configure uma variável de ambiente sensível chamada **SECRET_KEY**
+7. Configure um super usuário para a aplicação
 8. Consulte todas as variáveis de ambiente configuradas
 
 ```console
