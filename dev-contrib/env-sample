@@ -1,3 +1,6 @@
-DEBUG=True
+# Variáveis de Ambiente Sensíveis 
 SECRET_KEY=<secret-key>
+
+# Variáveis de Ambiente Não-Sensíveis
+DEBUG=True
 ALLOWED_HOSTS=127.0.0.1, .localhost
