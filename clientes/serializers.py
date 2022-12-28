@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from clientes.models import Cliente
 from clientes.validators import *
+from decouple import config
 
 
 class ClienteSerializer(serializers.ModelSerializer):
@@ -21,4 +22,5 @@ class ClienteSerializer(serializers.ModelSerializer):
         if not celular_valido(data['celular']):
             raise serializers.ValidationError(
                 {'celular': 'O número do celular deve seguir este modelo: 12 12345-1234'})
+        print(config('SECRET_KEY'))
         return data
